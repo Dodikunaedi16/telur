@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CICI MUSLIMAH – Mukena Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<div id="customNotif" class="custom-notif"></div>
+<div id="notif-beli" class="notif-mobile"></div>
+
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="images/Navbar.png" alt="Logo Website" />
+    </div>
+  </div>
+</header>
+
+
+
+<section class="hero reveal">
+  <div>
+    <div class="badge">Mukena Premium</div>
+    <h1>Cici <span>Muslimah</span></h1>
+    <p class="desc">
+      Mukena berbahan <b>Katun Micro</b> — lembut, adem,
+      jatuh cantik & nyaman untuk ibadah harian maupun hari raya.
+    </p>
+  </div>
+  <img src="images/home.png">
+</section>
+
+<section class="video-section reveal">
+  <h2 class="video-title">Dipercaya Ribuan Muslimah</h2>
+  <p class="video-sub">
+    Lembut, jatuh cantik, dan nyaman digunakan setiap hari
+  </p>
+
+  <div class="video-slider" id="videoSlider">
+
+    <div class="video-track">
+
+      <div class="video-item">
+        <video controls playsinline class="product-video">
+          <source src="video/mukena1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="video-item">
+        <video controls playsinline class="product-video">
+          <source src="video/mukena2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+  </div>
+
+  <p class="video-note">
+    *Video real produk, warna bisa sedikit berbeda karena pencahayaan
+  </p>
+</section>
+
+
+<section class="promo-box reveal">
+  <div class="badge">PROMO SEBELUM THR 🔥</div>
+  <p><del>Rp 90.000</del></p>
+  <p><strong>Rp 49.500 / pcs</strong></p>
+  <!-- STICKY CTA -->
+<!-- <div class="sticky-cta">
+  <button onclick="orderWA()">💬 Pesan Sekarang</button>
+</div> -->
+
+<!-- COUNTDOWN PROMO -->
+<div class="countdown reveal">
+  
+<p style="font-size:13px;color:#92400e;margin-top:6px">
+  ⚠️ Stok terbatas • Harga naik setelah promo berakhir
+</p>
+  <span>⏰ Promo Berakhir Dalam</span>
+  <div id="timer">00 : 00 : 00</div>
+</div>
+
+<div class="trust reveal">
+  <!-- <div>🚚 Gratis Ongkir*</div> -->
+  <div>⭐ Best Seller</div>
+  <div>💯 Katun Micro Premium</div>
+  <div>📦 COD Tersedia</div>
+</div>
+<div id="notif-beli" style="
+position:fixed;
+bottom:20px;
+left:20px;
+background:#fff;
+padding:14px 18px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+font-size:13px;
+display:none;
+z-index:99;">
+</div>
+<p style="font-size:14px;color:#7c2d12;margin-top:10px">
+  ✔️ Tidak panas • ✔️ Tidak nerawang • ✔️ Nyaman dipakai lama
+</p>
+</section>
+
+<section class="menu">
+<h2 style="text-align:center;margin-bottom:30px">Pilih Warna</h2>
+<div class="cards">
+  <div class="card reveal">
+    <img src="images/Pink Rose.png" class="product-img">
+    <h4>Pink Rose</h4>
+    <div class="price">Rp 49.500</div>
+    <button class="btn tiktok" onclick="openTiktokOrder('Pink Rose')">TIK TOK SHOP</button>
+  </div>
+  <div class="card reveal">
+    <img src="images/Coklat Milo.png" class="product-img">
+    <h4>Coklat Milo</h4>
+    <div class="price">Rp 49.500</div>
+    <button class="btn tiktok" onclick="openTiktokOrder('Coklat Milo')">TIK TOK SHOP</button>
+  </div>
+  <div class="card reveal">
+    <img src="images/Coklat Mocca.png" class="product-img">
+    <h4>Coklat Mocca</h4>
+    <div class="price">Rp 49.500</div>
+    <button class="btn tiktok" onclick="opopenTiktokOrder('Coklat Mocca')">TIK TOK SHOP</button>
+  </div>
+  <div class="card reveal">
+    <img src="images/Abu Silver.png" class="product-img">
+    <h4>Abu Silver</h4>
+    <div class="price">Rp 49.500</div>
+    <button class="btn tiktok" onclick="openTiktokOrder('Abu Silver')">TIK TOK SHOP</button>
+  </div>
+</div>
+</section>
+
+<section class="paket-section">
+  <h2 class="paket-title">Pilih Paket Hemat 🔥</h2>
+  <p class="paket-sub">
+    Lebih hemat beli paket — cocok untuk keluarga & persiapan THR
+  </p>
+  <div class="paket-wrapper">
+    <!-- PAKET 3 -->
+    <div class="paket reveal">
+      <div class="badge small">PAKET KELUARGA</div>
+      <h4>3 PCS Mukena</h4>
+      <del>Rp 270.000</del>
+      <div class="harga">Rp 145.000</div>
+      <span class="hemat">Hemat Rp 125.000</span>
+      <button class="btn tiktok" onclick="openShopeePaket('paket3')">
+        🛒 BELI DI TIK TOK SHOP
+      </button>
+    </div>
+
+    <!-- PAKET THR (FOCUS / BEST) -->
+    <div class="paket reveal best">
+      <div class="badge big">🔥 PAKET THR</div>
+      <h4>10 PCS Mukena</h4>
+      <del>Rp 900.000</del>
+      <div class="harga">Rp 450.000</div>
+      <span class="hemat">Paling Laris • Hemat Rp 450.000</span>
+      <button class="btn tiktok" onclick="openShopeePaket('paket10')">
+        🛒 BELI DI TIK TOK SHOP
+      </button>
+    </div>
+
+    <!-- PAKET 5 -->
+    <div class="paket reveal">
+      <div class="badge small">🔥 BEST SELLER</div>
+      <h4>5 PCS Mukena</h4>
+      <del>Rp 450.000</del>
+      <div class="harga">Rp 235.000</div>
+      <span class="hemat">Harga Grosir • Hemat Rp 215.000</span>
+      <button class="btn tiktok" onclick="openShopeePaket('paket5')">
+       🛒 BELI DI TIK TOK SHOP
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section class="order-section">
+  <div class="order-box reveal">
+    <h3 class="order-title">Pesan Sekarang</h3>
+
+    <select id="warna">
+      <option>Pilih Warna</option>
+      <option>Pink Rose</option>
+      <option>Coklat Milo</option>
+      <option>Coklat Mocca</option>
+      <option>Abu Silver</option>
+      <option>Rendom</option>
+    </select>
+
+    <input type="number" id="jumlah" value="1" min="1" oninput="hitungTotal()">
+
+    <div class="total" id="total">Total: Rp 49.500</div>
+
+    <div class="order-buttons">
+      <button class="btn wa" onclick="orderWA()">💬 WhatsApp</button>
+      <button class="btn shopee" onclick="openShopee(warna.value)">🛒 Shopee</button>
+     <button class="btn tiktok" onclick="openTiktok()">
+  🎵 TikTok Shop
+    </button>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-wrap">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h3>CICI MUSLIMAH</h3>
+      <p>
+        Mukena Premium berbahan <b>Katun Micro</b><br>
+        Adem, lembut & nyaman untuk ibadah harian maupun hari raya.
+      </p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-social">
+      <h4>Ikuti Kami</h4>
+      <div class="social-links">
+        <a class="social-btn tiktok" 
+           href="https://www.tiktok.com/@avd_cirebon?_r=1&_t=ZS-93pWmI4QikD" 
+           target="_blank">
+          🎵 TikTok Shop
+        </a>
+
+        <a class="social-btn shopee" 
+           href="https://shopee.co.id/avdsolutiondigitalcirebon" 
+           target="_blank">
+          🛒 Shopee Official
+        </a>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="footer-cta">
+      <h4>Butuh Respon Cepat?</h4>
+      <button class="wa-footer" onclick="orderWA()">
+        💬 Pesan via WhatsApp
+      </button>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 CICI MUSLIMAH • All Rights Reserved
+  </div>
+</footer>
+
+
+ <script src="js/script.js" defer></script>
+</body>
+</html>
