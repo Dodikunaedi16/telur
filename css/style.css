@@ -46,78 +46,119 @@ header{
   z-index:10;
   background:rgba(255,255,255,.9);
   backdrop-filter:blur(10px);
- 
+  padding:18px 32px;
   box-shadow:0 8px 30px rgba(0,0,0,.06);
 }
-/* =========================
-   HEADER
-========================= */
-.site-header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: #ffffff;
-  z-index: 100;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #fff;
 }
 
-/* Header */
-.site-header {
-  top: 0;
-  background: transparent;
-  z-index: 1000;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Logo */
-.logo img {
-  height: 10rem;           /* ukuran pas */
+.logo-img {
+  height: 50px;
   width: auto;
-  display: block;
-  object-fit: contain;
 }
 
-/* =========================
-   MOBILE HEADER
-========================= */
-@media (max-width: 768px) {
-
-  .site-header {
-    backdrop-filter: blur(10px);
-    background: rgba(255,255,255,0.92);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  }
-
-  .nav-container {
-    padding: 8px 16px;
-  }
-
-  .logo img {
-    height: 10rem;   /* dari 10rem jadi proporsional di HP */
-   
-  }
-
+.logo h1 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
 }
-
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 768px) {
-
-  .nav-container {
-    padding: 8px 15px;
-  }
-
-  .logo img {
-    height: 38px;
-  }
-}
-
 .logo{
   font-size:22px;
   font-weight:700;
   letter-spacing:.5px;
   color:var(--accent);
+}
+
+.menu {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #fffafc, #ffffff);
+}
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  width: 260px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.image-wrapper {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.card h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #444;
+}
+
+.price {
+  color: #e91e63;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tiktok {
+  background: linear-gradient(90deg, #000000, #ff0050);
+  color: white;
+}
+
+.tiktok:hover {
+  opacity: 0.85;
 }
 
 /* HERO */
