@@ -204,7 +204,7 @@ function showCustomNotif(){
     <div class="notif-avatar">🧕</div>
     <div class="notif-text">
       <b>${randomBuyer}</b><br>
-      <span>Baru saja membeli ${qty} pcs</span>
+      <span>Baru saja membeli ${qty} paket telur ayam kampung</span>
     </div>
     <div class="notif-progress"></div>
   `;
@@ -350,7 +350,7 @@ function orderWA(){
 
   const pesan = `
 Assalamu'alaikum 🙏
-Saya ingin pesan Mukena Cici Muslimah
+Saya ingin pesan Telur Ayam Kampung
 
 Warna : ${warna}
 Jumlah : ${jumlah}
@@ -412,3 +412,15 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
+function orderWA(){
+
+  const pesan = `
+Assalamu'alaikum 🙏
+Saya ingin pesan Telur Ayam Kampung Asli
+  `;
+
+  window.open(
+    "https://wa.me/6281909944999?text=" + encodeURIComponent(pesan),
+    "_blank"
+  );
+}
