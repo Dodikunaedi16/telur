@@ -61,147 +61,63 @@
 
 
 <section class="promo-box reveal">
-  <div class="badge">PROMO SEBELUM THR 🔥</div>
-  <p><del>Rp 90.000</del></p>
-  <p><strong>Rp 49.500 / pcs</strong></p>
-  <!-- STICKY CTA -->
-<!-- <div class="sticky-cta">
-  <button onclick="orderWA()">💬 Pesan Sekarang</button>
-</div> -->
+  <div class="promo-image">
+    <img src="images/sempel.jpg" alt="Telur Ayam Kampung">
+    <div class="promo-overlay">
+      <h2>Promo Spesial Hari Ini 🔥</h2>
+      <p>Telur Ayam Kampung Asli • Fresh dari Peternakan</p>
+    </div>
+  </div>
 
-<!-- COUNTDOWN PROMO -->
-<div class="countdown reveal">
-  
-<p style="font-size:13px;color:#92400e;margin-top:6px">
-  ⚠️ Stok terbatas • Harga naik setelah promo berakhir
-</p>
-  <span>⏰ Promo Berakhir Dalam</span>
-  <div id="timer">00 : 00 : 00</div>
-</div>
+  <div class="trust reveal">
+    <div class="trust-item">🍳 Tanpa hormon</div>
+    <div class="trust-item">🐓 Ayam Kampung Asli</div>
+    <div class="trust-item">📦 COD Tersedia</div>
+  </div>
 
-<div class="trust reveal">
-  <!-- <div>🚚 Gratis Ongkir*</div> -->
-  <div>🍳 Tanpa hormon</div>
-  <div>🐓 Ayam Kampung Asli</div>
-  <div>📦 COD Tersedia</div>
-</div>
-<div id="notif-beli" style="
-position:fixed;
-bottom:20px;
-left:20px;
-background:#fff;
-padding:14px 18px;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
-font-size:13px;
-display:none;
-z-index:99;">
-</div>
-<p style="font-size:14px;color:#7c2d12;margin-top:10px">
- 🥚 Rasa lebih gurih dan alami • 🥚 Kuning telur lebih pekat dan padat • 🥚 Lebih segar karena langsung dari peternakan
-</p>
-</section>
+  <p class="promo-desc">
+    🥚 Rasa lebih gurih dan alami • 🥚 Kuning telur lebih pekat dan padat • 
+    🥚 Lebih segar karena langsung dari peternakan
+  </p>
 
-<section class="menu">
-<h2 style="text-align:center;margin-bottom:30px">Pilih Paket</h2>
-<div class="cards">
-  <div class="card reveal">
-    <img src="images/foto telur.png" class="product-img">
-    <h4>Pink Rose</h4>
-    <div class="price">Rp 49.500</div>
-    <button class="btn tiktok" onclick="openTiktokOrder('Pink Rose')">TIK TOK SHOP</button>
-  </div>
-  <div class="card reveal">
-    <img src="images/Coklat Milo.png" class="product-img">
-    <h4>Coklat Milo</h4>
-    <div class="price">Rp 49.500</div>
-    <button class="btn tiktok" onclick="openTiktokOrder('Coklat Milo')">TIK TOK SHOP</button>
-  </div>
-  <div class="card reveal">
-    <img src="images/Coklat Mocca.png" class="product-img">
-    <h4>Coklat Mocca</h4>
-    <div class="price">Rp 49.500</div>
-    <button class="btn tiktok" onclick="opopenTiktokOrder('Coklat Mocca')">TIK TOK SHOP</button>
-  </div>
-  <div class="card reveal">
-    <img src="images/Abu Silver.png" class="product-img">
-    <h4>Abu Silver</h4>
-    <div class="price">Rp 49.500</div>
-    <button class="btn tiktok" onclick="openTiktokOrder('Abu Silver')">TIK TOK SHOP</button>
-  </div>
-</div>
+  <div id="notif-beli"></div>
 </section>
 
 <section class="paket-section">
   <h2 class="paket-title">Pilih Paket Hemat 🔥</h2>
   <p class="paket-sub">
-    Lebih hemat beli paket — cocok untuk keluarga & persiapan THR
+    
   </p>
   <div class="paket-wrapper">
     <!-- PAKET 3 -->
     <div class="paket reveal">
-      <div class="badge small">PAKET KELUARGA</div>
-      <h4>3 PCS Mukena</h4>
-      <del>Rp 270.000</del>
-      <div class="harga">Rp 145.000</div>
-      <span class="hemat">Hemat Rp 125.000</span>
+      <div class="badge small">Paket Per Psc</div>
+     <img src="images/foto telur1.png" alt="">
+      <div class="harga">Rp 3500</div>
+      <button class="btn tiktok" onclick="openShopeePaket('paket3')">
+        🛒 BELI DI TIK TOK SHOP
+      </button>
+    </div>
+    <!-- paket isi 9 -->
+    <div class="paket reveal">
+      <div class="badge small">Paket Isi 9</div>
+     <img src="images/foto telur2.png" alt="">
+      <div class="harga">Rp 3400</div>
+      <button class="btn tiktok" onclick="openShopeePaket('paket3')">
+        🛒 BELI DI TIK TOK SHOP
+      </button>
+    </div>
+    <!-- isi paket isi 30 -->
+    <div class="paket reveal">
+      <div class="badge small">Paket isi 30</div>
+     <img src="images/foto telur3.png" alt="">
+      <div class="harga">Rp 3000</div>
       <button class="btn tiktok" onclick="openShopeePaket('paket3')">
         🛒 BELI DI TIK TOK SHOP
       </button>
     </div>
 
-    <!-- PAKET THR (FOCUS / BEST) -->
-    <div class="paket reveal best">
-      <div class="badge big">🔥 PAKET THR</div>
-      <h4>10 PCS Mukena</h4>
-      <del>Rp 900.000</del>
-      <div class="harga">Rp 450.000</div>
-      <span class="hemat">Paling Laris • Hemat Rp 450.000</span>
-      <button class="btn tiktok" onclick="openShopeePaket('paket10')">
-        🛒 BELI DI TIK TOK SHOP
-      </button>
-    </div>
-
-    <!-- PAKET 5 -->
-    <div class="paket reveal">
-      <div class="badge small">🔥 BEST SELLER</div>
-      <h4>5 PCS Mukena</h4>
-      <del>Rp 450.000</del>
-      <div class="harga">Rp 235.000</div>
-      <span class="hemat">Harga Grosir • Hemat Rp 215.000</span>
-      <button class="btn tiktok" onclick="openShopeePaket('paket5')">
-       🛒 BELI DI TIK TOK SHOP
-      </button>
-    </div>
-  </div>
-</section>
-
-
-<section class="order-section">
-  <div class="order-box reveal">
-    <h3 class="order-title">Pesan Sekarang</h3>
-
-    <select id="warna">
-      <option>Pilih Warna</option>
-      <option>Pink Rose</option>
-      <option>Coklat Milo</option>
-      <option>Coklat Mocca</option>
-      <option>Abu Silver</option>
-      <option>Rendom</option>
-    </select>
-
-    <input type="number" id="jumlah" value="1" min="1" oninput="hitungTotal()">
-
-    <div class="total" id="total">Total: Rp 49.500</div>
-
-    <div class="order-buttons">
-      <button class="btn wa" onclick="orderWA()">💬 WhatsApp</button>
-      <button class="btn shopee" onclick="openShopee(warna.value)">🛒 Shopee</button>
-     <button class="btn tiktok" onclick="openTiktok()">
-  🎵 TikTok Shop
-    </button>
-
-    </div>
+  
   </div>
 </section>
 
