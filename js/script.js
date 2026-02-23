@@ -430,3 +430,27 @@ Saya ingin pesan Telur Ayam Kampung Asli
     "_blank"
   );
 }
+
+
+  // Animasi fade-in saat halaman load
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".paket");
+
+    cards.forEach((card, index) => {
+      card.style.opacity = "0";
+      card.style.transform = "translateY(30px)";
+      
+      setTimeout(() => {
+        card.style.transition = "all 0.6s ease";
+        card.style.opacity = "1";
+        card.style.transform = "translateY(0)";
+      }, index * 200);
+    });
+  });
+
+  // Efek klik tombol (biar terasa interaktif)
+  document.querySelectorAll(".btn.tiktok").forEach(button => {
+    button.addEventListener("click", function () {
+      this.innerHTML = "⏳ Mengalihkan...";
+    });
+  });

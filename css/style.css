@@ -440,6 +440,238 @@ header{
   font-size:15px;
 }
 
+.paket-section {
+  padding: 60px 20px;
+  background: #fff7f2;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.paket-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.paket-sub {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.paket-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.paket {
+  background: #fff;
+  width: 290px;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.paket:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.highlight {
+  border: 2px solid #ff5722;
+  transform: scale(1.05);
+}
+
+.paket img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.paket h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 15px;
+  min-height: 35px;
+}
+
+.price-box {
+  margin-bottom: 15px;
+}
+
+.price-old {
+  display: block;
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.price-new {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ee4d2d; /* warna Shopee */
+}
+
+.hemat {
+  font-size: 12px;
+  color: #2ecc71;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ee4d2d;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 11px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.badge.small {
+  background: #ff9800;
+}
+
+.badge.green {
+  background: #2ecc71;
+}
+
+.btn.tiktok {
+  background: #ee4d2d;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn.tiktok:hover {
+  background: #d84315;
+}
+
+/* ========================= */
+/* 🔥 ANIMASI BADGE BERKEDIP */
+/* ========================= */
+
+@keyframes blinkPromo {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.85; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ee4d2d;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 11px;
+  border-radius: 20px;
+  font-weight: bold;
+  animation: blinkPromo 1.2s infinite;
+  box-shadow: 0 4px 10px rgba(238,77,45,0.4);
+}
+
+/* Badge variasi tetap jalan animasinya */
+.badge.small {
+  background: #ff9800;
+}
+
+.badge.green {
+  background: #2ecc71;
+}
+
+
+/* ========================= */
+/* 📱 SUPER MOBILE OPTIMIZED */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .paket-section {
+    padding: 40px 15px;
+  }
+
+  .paket-title {
+    font-size: 22px;
+    align-items: center;
+  }
+
+  .paket-sub {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .paket-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .paket {
+    width: 100%;
+    max-width: 360px;
+    
+  }
+
+  .highlight {
+    transform: none; /* biar tidak kegedean di HP */
+    border: 2px solid #ee4d2d;
+  }
+
+  .paket img {
+    height: 160px;
+  }
+
+  .price-new {
+    font-size: 20px;
+  }
+
+  .btn.tiktok {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+/* ========================= */
+/* 🖼 GAMBAR TIDAK TERPOTONG */
+/* ========================= */
+
+.paket img {
+  width: 100%;
+  height: auto;            /* tinggi mengikuti proporsi asli */
+  max-height: 220px;       /* batas maksimal biar tidak terlalu tinggi */
+  object-fit: contain;     /* tampil utuh */
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background: #f9f9f9;     /* biar kalau ada space kosong tetap rapi */
+  padding: 10px;           /* jarak supaya tidak nempel */
+}
+
+@media (max-width: 768px) {
+  .paket img {
+    max-height: 180px;
+  }
+}
+
 /* VIDEO */
 .video-section{
   text-align:center;
