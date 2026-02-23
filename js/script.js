@@ -111,22 +111,16 @@ function openTiktokOrder(warna){
 /* ======================================
    SHOPEE PAKET
    ====================================== */
-function openShopeePaket(paket){
-  const links = {
-    paket3 : "https://vt.tokopedia.com/t/ZS9JPHJPsv2FA-nrXfM/",
-    paket5 : "https://vt.tokopedia.com/t/ZS9JPH82rUuvj-uhIHR/",
-    paket10: "https://vt.tokopedia.com/t/ZS9JPH22GYDPt-fk6MX/"
-  };
 
-  
-  if(!links[paket]){
-    alert("Link paket belum tersedia");
-    return;
+  function openTiktokOrder(paket) {
+    const baseUrl = "https://id.shp.ee/zaepdVF"; // Ganti dengan link toko TikTok kamu
+    const message = encodeURIComponent("Halo, saya mau pesan " + paket);
+
+    // Jika mau diarahkan ke WhatsApp:
+    // const baseUrl = "https://wa.me/628XXXXXXXXXX?text=" + message;
+
+    window.open(baseUrl, "_blank");
   }
-  window.location.href = links[paket];
-  
-}
-
 /* ======================================
    SCROLL ANIMATION
    ====================================== */
