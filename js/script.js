@@ -10,7 +10,8 @@ const TIKTOK_LINKS = {
   "Pink Rose": "https://vt.tokopedia.com/t/ZS9JPCcUFhpbb-yOHON/",
   "Coklat Milo": "https://vt.tokopedia.com/t/ZS9JPCcUFhpbb-yOHON/",
   "Coklat Mocca": "https://vt.tokopedia.com/t/ZS9JPCcUFhpbb-yOHON/",
-  "Abu Silver": "https://vt.tokopedia.com/t/ZS9JPCcUFhpbb-yOHON/"
+  "Abu Silver": "https://vt.tokopedia.com/t/ZS9JPCcUFhpbb-yOHON/",
+  "telur burung dara": "/"
 };
 
 
@@ -454,3 +455,47 @@ Saya ingin pesan Telur Ayam Kampung Asli
       this.innerHTML = "⏳ Mengalihkan...";
     });
   });
+
+  // AUTO SLIDE MOBILE
+const slider = document.getElementById("paketSlider");
+
+if (slider) {
+  let autoSlide;
+  let index = 0;
+
+  function startAutoSlide() {
+    if (window.innerWidth <= 768) {
+
+      const cards = slider.querySelectorAll(".paket-card");
+      const total = cards.length;
+
+      autoSlide = setInterval(() => {
+        index++;
+        if (index >= total) index = 0;
+
+        slider.scrollTo({
+          left: cards[index].offsetLeft - 10,
+          behavior: "smooth"
+        });
+
+      }, 3000); // 3 detik
+    }
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlide);
+  }
+
+  // Mulai saat load
+  startAutoSlide();
+
+  // Stop kalau disentuh
+  slider.addEventListener("touchstart", stopAutoSlide);
+
+  // Restart kalau resize
+  window.addEventListener("resize", () => {
+    stopAutoSlide();
+    index = 0;
+    startAutoSlide();
+  });
+}
