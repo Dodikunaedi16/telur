@@ -178,7 +178,7 @@ updateTimer();
 const customNotif = document.getElementById("customNotif");
 
 const buyers = [
- "Siti - Bandung",
+"Siti - Bandung",
 "Ayu - Bekasi",
 "Nur - Surabaya",
 "Lina - Depok",
@@ -382,42 +382,6 @@ function showBubble(text){
     bubble.classList.remove("show");
   },4000);
 }
-
-
-document.addEventListener("DOMContentLoaded", function(){
-
-  const slider = document.getElementById("videoSlider");
-  if(!slider) return;
-
-  const track = slider.querySelector(".video-track");
-  const items = slider.querySelectorAll(".video-item");
-  const videos = slider.querySelectorAll("video");
-
-  let index = 0;
-
-  function goToSlide(i){
-    track.style.transition = "transform 0.6s ease";
-    track.style.transform = `translateX(-${i * 100}%)`;
-
-    videos.forEach(v => v.pause());
-    videos[i].currentTime = 0;
-    videos[i].play();
-  }
-
-  videos.forEach((video, i) => {
-    video.addEventListener("ended", function(){
-      index++;
-      if(index >= videos.length){
-        index = 0;
-      }
-      goToSlide(index);
-    });
-  });
-
-  // Mulai video pertama
-  goToSlide(0);
-
-});
 
 function orderWA(){
 
